@@ -21,12 +21,14 @@ export default {
 .map {
   z-index: 1;
   position: relative;
-  opacity: 0.5;
+  min-width: 100%;
 }
 
 .point {
   width: 0.5em;
   height: 0.5em;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
   border-radius: 100%;
   background-color: black;
   z-index: 2;

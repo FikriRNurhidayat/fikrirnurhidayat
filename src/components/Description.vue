@@ -15,8 +15,8 @@ export default {
 
 <style scoped>
 .description {
-  padding: 8rem;
   font-size: 1.5rem;
+  padding: 8rem 0rem;
 }
 
 @keyframes description--appear {
