@@ -1,15 +1,19 @@
 <template>
-  <v-container class="map-container">
+  <!-- <v-container class="map-container">
     <v-img src="@/assets/images/map.svg" height="100%" data-aos="fade-in" class="map" />
     <div class="point">
       <div class="sonar" />
     </div>
-  </v-container>
+  </v-container> -->
+  <v-container id="map" ref="map" class="px-0" data-aos="fade" data-aos-duration="800" data-aos-delay="200" />
 </template>
 
 <script>
 export default {
-  name: 'Map'
+  name: 'Map',
+
+  mounted() {
+  }
 }
 </script>
 

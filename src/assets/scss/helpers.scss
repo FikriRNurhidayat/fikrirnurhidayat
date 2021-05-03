@@ -1,0 +1,40 @@
+.d-flex {
+  display: flex;
+
+  &-column {
+    @extend .d-flex;
+    flex-direction: column;
+  }
+}
+
+.justify-content {
+  &-center {
+    @extend .justify-content;
+    justify-content: center;
+  }
+}
+
+.align-items {
+  &-center {
+    @extend .align-items;
+    align-items: center;
+  }
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+}

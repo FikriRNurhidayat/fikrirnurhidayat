@@ -1,6 +1,5 @@
 <template>
   <div class="hero" data-aos="fade-up" data-aos-duration="600">
-    <h5 class="hero__greet">{{ greet }}</h5>
     <h1 class="hero__name">{{ name }}</h1>
   </div>
 </template>
@@ -9,7 +8,6 @@
 export default {
   name: 'Hero',
   props: [
-    'greet',
     'name'
   ]
 }
@@ -21,15 +19,22 @@ export default {
   text-align: left;
 }
 
-.hero__greet {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
 .hero__name {
-  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 7.5rem;
+  font-weight: 400;
+  line-height: 8.5rem;
+  letter-spacing: 0rem;
   animation: fading 0.8s infinite;
   animation-direction: alternate;
+  max-width: 50%;
+}
+
+@media (max-width: 960px) {
+  .hero__name {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
 }
 
 @keyframes fading {
