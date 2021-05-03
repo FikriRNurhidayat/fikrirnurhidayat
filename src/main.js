@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
 import vuetify from './plugins/vuetify';
 import AOS from './plugins/aos'
-import router from './router'
+import './plugins/mapbox'
 
 Vue.config.productionTip = false
 
