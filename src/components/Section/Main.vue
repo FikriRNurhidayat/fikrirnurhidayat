@@ -1,6 +1,6 @@
 <template>
   <c-section class="section d-flex-column">
-    <c-hero name="Fikri Rahmat Nurhidayat" title="Web Developer" />
+    <c-hero :name="content" />
   </c-section>
 </template>
 
@@ -15,8 +15,7 @@ export default {
     'c-hero': Hero
   },
   props: [
-    'name',
-    'title'
+    'content'
   ]
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
-  <div class="hero" data-aos="fade-up" data-aos-duration="600">
-    <h1 class="hero__name">{{ name }}</h1>
+  <div class="hero">
+    <h1 class="hero__name" data-aos="zoom-in" data-aos-duration="600">{{ name }}</h1>
   </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
 .hero__name {
   font-family: 'Open Sans', sans-serif;
   font-size: 7.5rem;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 8.5rem;
   letter-spacing: 0rem;
   animation: fading 0.8s infinite;
@@ -32,8 +32,12 @@ export default {
 
 @media (max-width: 960px) {
   .hero__name {
-    font-size: 5rem;
-    line-height: 6rem;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .hero {
+    padding: 1rem;
   }
 }
 
