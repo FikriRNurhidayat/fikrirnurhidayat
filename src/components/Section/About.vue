@@ -1,5 +1,5 @@
 <template>
-  <v-container class="me py-15">
+  <v-container fluid class="me py-15">
     <v-row align="center" style="min-height: 50vh">
       <v-col cols="12" md="6" lg="6">
         <div class="main" v-text="name" data-aos="fade-in"></div>

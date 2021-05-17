@@ -87,11 +87,11 @@ export default {
             image: require("@/assets/images/sass.png"),
           },
           {
-            name: "React.js",
+            name: "Vue.js",
             image: require("@/assets/images/vue.png"),
           },
           {
-            name: "Vue.js",
+            name: "React.js",
             image: require("@/assets/images/react.png"),
           },
         ],
@@ -147,7 +147,7 @@ export default {
       },
     ],
     footer: {
-      copyright: "Copyright © 2021 Fikri Rahmat Nurhidayat",
+      copyright: "Fikri Rahmat Nurhidayat © 2019 - 2021",
       contacts: [
         {
           icon: "mdi-email",

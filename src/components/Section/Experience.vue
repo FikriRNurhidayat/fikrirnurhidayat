@@ -1,5 +1,5 @@
 <template>
-  <v-container class="experience py-12 px-4">
+  <v-container fluid class="experience py-12 px-4">
     <v-timeline align-top dark :dense="$vuetify.breakpoint.mdAndDown">
       <v-timeline-item
         data-aos="fade-in"
@@ -17,30 +17,42 @@
           data-aos="zoom-in"
           data-aos-delay="300"
         >
-          <v-badge color="transparent" inline>
-            <template v-slot:badge>
-              <div
-                v-text="item.position"
-                class="text-overline font-weight-thin"
-              ></div>
-            </template>
-            <div
-              class="text-h4 font-weight-normal mb-4 place--text"
+          <v-row>
+            <v-col
+              cols="12"
+              md="6"
+              lg="6"
+              class="text-h4 font-weight-normal mb-4 place--text py-0"
               v-text="item.title"
               @click="redirect(item.link)($event)"
-            ></div>
-          </v-badge>
+            ></v-col>
 
-          <div
-            class="text-subtitle mb-4"
-            v-if="!!item.subtitle"
-            v-text="item.subtitle"
-          ></div>
-          <div
-            class="text-body-2 font-weight-light mb-4"
-            v-text="item.description"
-          ></div>
-          <div class="text-overline mb-4" v-html="item.time"></div>
+            <v-col
+              v-text="item.position"
+              class="text-overline font-weight-thin"
+            ></v-col>
+          </v-row>
+
+          <v-row>
+            <v-col
+              class="text-subtitle mb-4 my-0"
+              v-if="!!item.subtitle"
+              v-text="item.subtitle"
+              cols="12"
+            ></v-col>
+
+            <v-col
+              class="text-body-2 font-weight-light mb-4"
+              v-text="item.description"
+              cols="12"
+            ></v-col>
+
+            <v-col
+              class="text-overline mb-4"
+              cols="12"
+              v-html="item.time"
+            ></v-col>
+          </v-row>
         </v-container>
       </v-timeline-item>
     </v-timeline>
