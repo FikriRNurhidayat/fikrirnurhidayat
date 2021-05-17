@@ -11,25 +11,19 @@
         <template v-slot:opposite v-if="!!item.image">
           <img :src="item.image" style="max-height: 5rem" data-aos="zoom-in" />
         </template>
-        <v-container
-          fluid
-          class="text-left"
-          data-aos="zoom-in"
-          data-aos-delay="300"
-        >
-          <v-row>
+        <v-container fluid class="text-left" data-aos="zoom-in">
+          <v-row class="d-flex flex-xs-wrap flex-lg-nowrap align-center">
             <v-col
-              cols="12"
-              md="6"
-              lg="6"
-              class="text-h4 font-weight-normal mb-4 place--text py-0"
-              v-text="item.title"
+              class="text-h4 font-weight-normal place--text"
               @click="redirect(item.link)($event)"
+              v-text="item.title"
             ></v-col>
 
             <v-col
-              v-text="item.position"
               class="text-overline font-weight-thin"
+              v-text="item.position"
+              data-aos="zoom-in"
+              data-aos-delay="300"
             ></v-col>
           </v-row>
 
@@ -74,5 +68,6 @@ export default {
 <style lang="scss" scoped>
 .place--text {
   cursor: pointer;
+  width: initial;
 }
 </style>
