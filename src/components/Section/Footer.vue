@@ -1,10 +1,10 @@
 <template>
   <v-container fluid>
     <v-row align="center">
-      <v-col>
+      <v-col cols="12" md="6" lg="6">
         <div class="text-overline font-weight-light" v-text="copyright"></div>
       </v-col>
-      <v-col class="d-flex">
+      <v-col class="d-flex" cols="12" md="6" lg="6">
         <v-container v-for="(item, index) in contacts" :key="index">
           <v-btn
             color="transparent"
