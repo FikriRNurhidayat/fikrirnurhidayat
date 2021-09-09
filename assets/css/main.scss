@@ -21,11 +21,14 @@ a {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   padding: 2rem 0;
   position: sticky-top;
 }
 
 .brand {
+  max-width: fit-content;
   padding: 0;
   margin: 0;
   font-size: unset;
@@ -35,12 +38,13 @@ header {
 
 .nav-link {
   display: flex;
-  justify-content: end;
+  margin-top: 1rem;
+  justify-content: center;
   align-items: center;
 }
 
 .nav-link a {
-  padding: 0 1rem;
+  padding-right: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: normal;
@@ -59,4 +63,16 @@ header {
 footer {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    padding: 0 1rem;
+    margin-top: unset;
+    justify-content: start;
+  }
 }

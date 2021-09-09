@@ -16,7 +16,7 @@ main > div {
   width: 100%;
   padding: 2em;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -50,7 +50,7 @@ header a {
   text-transform: uppercase;
   font-weight: normal;
   color: var(--color-black-2);
-  padding: 0 1rem;
+  padding-right: 1rem;
 }
 
 header a:hover {
@@ -73,6 +73,10 @@ header a[class="active"] {
 }
 
 @media only screen and (min-width: 992px) {
+  header a {
+    padding: 0 1rem;
+  }
+
   header {
     justify-content: end;
     width: fit-content;
@@ -81,5 +85,6 @@ header a[class="active"] {
 
   main > div {
     flex-direction: row;
+    align-items: flex-end;
   }
 }

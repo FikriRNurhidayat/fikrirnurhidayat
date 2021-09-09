@@ -6,18 +6,20 @@ body { max-width: 40em; margin: auto; padding: 0 1em; line-height: 1.7; min-heig
 
 a { text-decoration: none !important; font-weight: 600; color: var(--color-yellow); }
 
-header { display: flex; justify-content: space-between; padding: 2rem 0; position: sticky-top; }
+header { display: flex; justify-content: space-between; align-items: center; flex-direction: column; padding: 2rem 0; position: sticky-top; }
 
-.brand { padding: 0; margin: 0; font-size: unset; font-weight: normal; text-transform: uppercase; }
+.brand { max-width: fit-content; padding: 0; margin: 0; font-size: unset; font-weight: normal; text-transform: uppercase; }
 
-.nav-link { display: flex; justify-content: end; align-items: center; }
+.nav-link { display: flex; margin-top: 1rem; justify-content: center; align-items: center; }
 
-.nav-link a { padding: 0 1rem; text-decoration: none; text-transform: uppercase; font-weight: normal; color: var(--color-black-2); }
+.nav-link a { padding-right: 1rem; text-decoration: none; text-transform: uppercase; font-weight: normal; color: var(--color-black-2); }
 
 .nav-link a:hover { color: var(--color-black-1); }
 
 .nav-link a[class="active"] { color: var(--color-yellow); font-weight: bold; }
 
 footer { display: flex; justify-content: space-between; }
+
+@media only screen and (min-width: 992px) { header { flex-direction: row; } .nav-link { padding: 0 1rem; margin-top: unset; justify-content: start; } }
 
 /*# sourceMappingURL=main.css.map */
