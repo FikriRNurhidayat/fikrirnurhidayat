@@ -1,16 +1,31 @@
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
-$bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-  monospace;
+@import "colors";
 
 body {
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace;
   min-height: 100vh;
   font: 1.2em/1.62 sans-serif;
   margin: 0;
   line-height: 1.4;
   transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent-rgb: var(--color-accent-dark-rgb);
+  }
+
+  body {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+  }
+
+  a {
+    font-weight: normal;
+  }
 }

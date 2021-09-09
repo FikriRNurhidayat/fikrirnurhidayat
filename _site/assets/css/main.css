@@ -1,10 +1,12 @@
-body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace; min-height: 100vh; font: 1.2em/1.62 sans-serif; margin: 0; line-height: 1.4; transition: 0.3s; }
+:root { --color-accent-rgb: 249, 197, 19; --color-accent: rgb(var(--color-accent-rgb)); --color-accent-1: rgba(var(--color-accent-rgb), 0.9); --color-accent-2: rgba(var(--color-accent-rgb), 0.8); --color-accent-dark-rgb: 255, 211, 61; --color-light: #ffffff; --color-dark: #000000; }
 
-:root { --color-white: #ffffff; --color-black: #000000; --color-black-1: rgba(0, 0, 0, 0.9); --color-black-2: rgba(0, 0, 0, 0.5); --color-purple: #733572; --color-yellow: #ffca28; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace; min-height: 100vh; font: 1.2em/1.62 sans-serif; margin: 0; line-height: 1.4; transition: 0.3s; }
+
+a { text-decoration: none; color: var(--color-accent); }
+
+@media (prefers-color-scheme: dark) { :root { --color-accent-rgb: var(--color-accent-dark-rgb); } body { background-color: var(--color-dark); color: var(--color-light); } a { font-weight: normal; } }
 
 body { max-width: 40em; margin: auto; padding: 0 1em; line-height: 1.7; min-height: unset; }
-
-a { text-decoration: none !important; font-weight: 600; color: var(--color-yellow); }
 
 header { display: flex; justify-content: space-between; align-items: center; flex-direction: column; padding: 2rem 0; position: sticky-top; }
 
@@ -12,11 +14,11 @@ header { display: flex; justify-content: space-between; align-items: center; fle
 
 .nav-link { display: flex; margin-top: 1rem; justify-content: center; align-items: center; }
 
-.nav-link a { padding: 0 1rem; text-decoration: none; text-transform: uppercase; font-weight: normal; color: var(--color-black-2); }
+.nav-link a { padding: 0 1rem; text-transform: uppercase; color: var(--color-accent-2); }
 
-.nav-link a:hover { color: var(--color-black-1); }
+.nav-link a:hover { color: var(--color-accent-1); }
 
-.nav-link a[class="active"] { color: var(--color-yellow); font-weight: bold; }
+.nav-link a[class="active"] { color: var(--color-accent); font-weight: bold; }
 
 footer { display: flex; justify-content: space-between; }
 

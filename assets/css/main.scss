@@ -2,7 +2,6 @@
 ---
 
 @import "main";
-@import "colors";
 
 body {
   max-width: 40em;
@@ -10,12 +9,6 @@ body {
   padding: 0 1em;
   line-height: 1.7;
   min-height: unset;
-}
-
-a {
-  text-decoration: none !important;
-  font-weight: 600;
-  color: var(--color-yellow);
 }
 
 header {
@@ -45,18 +38,16 @@ header {
 
 .nav-link a {
   padding: 0 1rem;
-  text-decoration: none;
   text-transform: uppercase;
-  font-weight: normal;
-  color: var(--color-black-2);
+  color: var(--color-accent-2);
 }
 
 .nav-link a:hover {
-  color: var(--color-black-1);
+  color: var(--color-accent-1);
 }
 
 .nav-link a[class="active"] {
-  color: var(--color-yellow);
+  color: var(--color-accent);
   font-weight: bold;
 }
 
