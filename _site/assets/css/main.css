@@ -12,7 +12,7 @@ header { display: flex; justify-content: space-between; align-items: center; fle
 
 .nav-link { display: flex; margin-top: 1rem; justify-content: center; align-items: center; }
 
-.nav-link a { padding-right: 1rem; text-decoration: none; text-transform: uppercase; font-weight: normal; color: var(--color-black-2); }
+.nav-link a { padding: 0 1rem; text-decoration: none; text-transform: uppercase; font-weight: normal; color: var(--color-black-2); }
 
 .nav-link a:hover { color: var(--color-black-1); }
 
@@ -20,6 +20,6 @@ header { display: flex; justify-content: space-between; align-items: center; fle
 
 footer { display: flex; justify-content: space-between; }
 
-@media only screen and (min-width: 992px) { header { flex-direction: row; } .nav-link { padding: 0 1rem; margin-top: unset; justify-content: start; } }
+@media only screen and (min-width: 992px) { header { flex-direction: row; } .nav-link { margin-top: unset; justify-content: start; } }
 
 /*# sourceMappingURL=main.css.map */

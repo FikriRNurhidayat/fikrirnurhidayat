@@ -44,7 +44,7 @@ header {
 }
 
 .nav-link a {
-  padding-right: 1rem;
+  padding: 0 1rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: normal;
@@ -71,7 +71,6 @@ footer {
   }
 
   .nav-link {
-    padding: 0 1rem;
     margin-top: unset;
     justify-content: start;
   }
