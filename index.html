@@ -1,0 +1,23 @@
+---
+layout: display
+title: "Home"
+---
+
+<main>
+  <div>
+    <div class="identity">
+      <h1>Fikri<br />Rahmat Nurhidayat</h1>
+      <h2>Some Ordinary Human Being</h2>
+    </div>
+
+    <header class="nav-link">
+      {% for link in site.data.navigation %} {% if link == page.title %}
+      <a href="/{{link | downcase | remove: 'home'}}" class="active"
+        >{{link}}</a
+      >
+      {% else %}
+      <a href="/{{link | downcase | remove: 'home'}}">{{link}}</a>
+      {% endif %} {% endfor %}
+    </header>
+  </div>
+</main>

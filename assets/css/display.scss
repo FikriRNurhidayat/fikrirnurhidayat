@@ -1,0 +1,85 @@
+---
+---
+
+@import "main";
+@import "colors";
+
+main {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main > div {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.identity {
+  flex-grow: 2;
+}
+
+.identity h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.identity h2 {
+  margin: 0;
+  font-size: 1em;
+  width: fit-content;
+  font-weight: normal;
+}
+
+header {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin-top: 1em;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--color-black-2);
+  padding: 0 1rem;
+}
+
+header a:hover {
+  color: var(--color-black);
+}
+
+header a[class="active"] {
+  color: var(--color-black);
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 576px) {
+  .identity h1 {
+    font-size: 4em;
+  }
+
+  .identity h2 {
+    font-size: revert;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    justify-content: end;
+    width: fit-content;
+    margin-top: unset;
+  }
+
+  main > div {
+    flex-direction: row;
+  }
+}
