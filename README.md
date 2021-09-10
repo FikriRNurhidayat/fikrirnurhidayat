@@ -1,27 +1,19 @@
-# fikrirnurhidayat.github.io
+# Fikri, here! 👋
 
-This is a source code for <a href="https://fikrirnurhidayat.github.io" target="_blank">fikrirnurhidayat.github.io</a>,
-written in <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+My name is **Fikri Rahmat Nurhidayat**. Web developer based on Indonesia. I'm mainly focusing on **Backend Web Development**, and I'm OK with **Frontend Web Development**.
 
-## Requirements
+I work using **Typescript**, **Ruby on Rails**, and **Node.js** on my current workplaces, but I also use **Vue.js**, **Gridsome**, and **Express.js** on my other projects.
 
-- Ruby
-- Jekyll
+I'm planning on working on some open-source projects, specifically on desktop application such as:
+- [suckless's dwm](https://dwm.suckless.org/) (Dynamic Window Manager)
+- [suckless's st](https://st.suckless.org/) (Simple Terminal)
+- and many others.
 
-## How to run?
+Also, I'm a **GNU/Linux enthusiast**, so expect some **GNU/Linux** related blogpost 🤭
 
-You need to install the dependency first
+# Interested in me?
 
-```bash
-bundle install
-```
-
-Then run
-
-```bash
-jekyll serve
-```
-
-# License
-
-MIT
+You can find me here:
+- <a target="_blank" href="https://github.com/fikrirnurhidayat">Github</a>
+- <a target="_blank" href="https://gitlab.com/fikrirnurhidayat">Gitlab</a>
+- <a target="_blank" href="https://www.linkedin.com/in/fikrirnurhidayat">Linkedin</a>
