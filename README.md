@@ -17,3 +17,5 @@ You can find me here:
 - <a target="_blank" href="https://github.com/fikrirnurhidayat">Github</a>
 - <a target="_blank" href="https://gitlab.com/fikrirnurhidayat">Gitlab</a>
 - <a target="_blank" href="https://www.linkedin.com/in/fikrirnurhidayat">Linkedin</a>
+
+![Fikri's GitHub stats](https://github-readme-stats.vercel.app/api?username=fikrirnurhidayat&show_icons=true&theme=radical)
